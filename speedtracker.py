@@ -29,7 +29,7 @@ while True:
         unit = driver.find_element(By.ID,"speed-units").text
         if unit != "Mbps":
             speed = f"0.{speed}"
-        speed_table = open("/home/amiljan@reversinglabs.lan/bin/speedtracker/speed_table.csv","a")
+        speed_table = open("/home/amiljan@reversinglabs.lan/bin/misc/speedtracker/speed_table.csv","a")
         speed_table.write(f'{date};{speed}\n')
         speed_table.close()
     driver.close()
